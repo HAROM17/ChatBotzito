@@ -83,8 +83,21 @@
         }
     }
 
+    
+
     function EnviarMensajeWhastapp($comentario,$numero){
         $comentario = strtolower($comentario);
+
+        $hora_actual = date("H");
+
+        // Inicializar el saludo según la hora
+        if ($hora_actual >= 6 && $hora_actual < 12) {
+            $saludo = "Buenos días";
+        } elseif ($hora_actual >= 12 && $hora_actual < 18) {
+            $saludo = "Buenas tardes";
+        } else {
+            $saludo = "Buenas noches";
+        }
 
         if (strpos($comentario, 'hola') !== false || strpos($comentario, 'holi') !== false || strpos($comentario, 'a') !== false || strpos($comentario, 'amigo') !== false || strpos($comentario, 'xd') !== false) {
             $data = json_encode([
@@ -94,7 +107,7 @@
                 "type" => "text",
                 "text"=> [
                     "preview_url" => false,
-                    "body"=> "Hola Bienvenido andercon-bastidas.com"
+                    "body"=> "Hola $saludo, Bienvenido. ingrese a mi sistema a sistema.haromdev.com"
                 ]
             ]);
         }else if ($comentario=='1') {
