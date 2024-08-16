@@ -1,6 +1,6 @@
 <?php
     const TOKEN_HAROM = "HAROMDEVPHPAPIMETAS";
-    const WEBHOOK_URL = "https://haromdev.com/webhook.php";
+    const WEBHOOK_URL = "https://apibotzito.haromdev.com/webhook.php";
 
     require_once("config/conexion.php");
     require_once("models/Registro.php");
