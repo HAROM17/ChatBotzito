@@ -86,7 +86,7 @@
     function EnviarMensajeWhastapp($comentario,$numero){
         $comentario = strtolower($comentario);
 
-        if (strpos($comentario,'hola') !== false){
+        if (strpos($comentario,'hola','d') !== false){
             $data = json_encode([
                 "messaging_product" => "whatsapp",
                 "recipient_type"=> "individual",
