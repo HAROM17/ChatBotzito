@@ -107,7 +107,7 @@
                 "type" => "text",
                 "text"=> [
                     "preview_url" => false,
-                    "body"=> "Hola $saludo, Bienvenido. ingrese a mi sistema a sistema.haromdev.com"
+                    "body"=> "Hola $saludo, Bienvenido. ingrese a mi sistema \n sistema.haromdev.com"
                 ]
             ]);
         }else if ($comentario=='1') {
