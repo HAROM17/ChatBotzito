@@ -404,7 +404,7 @@
         $options = [
             'http' => [
                 'method' => 'POST',
-                'header' => "Content-type: application/json\r\nAuthorization: Bearer EAAYM5fZAaew4BO1A2XwOU6C9MJS5m7tpfqLaC3BEmHucGZCKf1fndSRdNXrwZASvjz1ZA30N1wft9ZB7n6ZCU18udLWzFcRDSmyVIVZAr20E5qJcmf9aOyJ16ZAtQfrEpC6mTOhA3jaL47d5iKPQYleot23Mc0McVYGWwAdvZB0Ylx7ZBTFcCPciSbfb92pesmX59yDI0iHQLOE3jOsZAh6ZBzMZD\r\n",
+                'header' => "Content-type: application/json\r\nAuthorization: Bearer EAAYM5fZAaew4BOZBZCtZCLZC6kLQiqmc4jcKjdYXlbUVgdcB6Vy3v6gspqsYb0e7u6BQxf4pWECk6e2ZBddLSZAFh8xZAZAduUhRGz5TGuSMAIVxZAw7kmZAUb3Tr60buZAiyq7JXTjZCLXwxMBzyZApeyCZA5XD4lDTW3wzp5QKEgWbbhscSrs0prJ14VstnwrdgxTwdZA2\r\n",
                 'content' => $data,
                 'ignore_errors' => true
             ]
