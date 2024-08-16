@@ -86,7 +86,7 @@
     function EnviarMensajeWhastapp($comentario,$numero){
         $comentario = strtolower($comentario);
 
-        if (strpos($comentario,'hola') !== false){
+        if (strpos($comentario, 'hola') !== false || strpos($comentario, 'holi') !== false || strpos($comentario, 'a') !== false || strpos($comentario, 'amigo') !== false || strpos($comentario, 'xd') !== false) {
             $data = json_encode([
                 "messaging_product" => "whatsapp",
                 "recipient_type"=> "individual",
@@ -94,7 +94,7 @@
                 "type" => "text",
                 "text"=> [
                     "preview_url" => false,
-                    "body"=> "Hola visita mi web andercon-bastidas.com"
+                    "body"=> "Hola Bienvenido andercon-bastidas.com"
                 ]
             ]);
         }else if ($comentario=='1') {
